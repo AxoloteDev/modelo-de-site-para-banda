@@ -1,0 +1,621 @@
+/* importações */
+
+/* import icones */
+
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
+
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css");
+
+/* import fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Regras */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Variaveis */
+
+:root {
+  --cor1: black;
+  --cor2: #979797;
+  --cor3: #ffffff;
+  --cor4: #ff0000;
+
+  --font1: "Lato", sans-serif;
+  --font2: "Segoe UI", sans-serif;
+}
+
+/* body */
+
+body {
+  font-size: 16px;
+  z-index: 1;
+  height: 1000px;
+}
+
+/*Navegação*/
+
+nav {
+  background-color: var(--cor1);
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: var(--cor3);
+  margin: auto 10px auto 10px;
+  font: normal 1.2em var(--font1);
+  font-variant: small-caps;
+  height: 100%;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--cor2);
+  color: var(--cor1);
+}
+
+/* Navegação > Icones */
+
+#lupa {
+  padding: 15px;
+  align-self: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+#lupa:hover {
+  background-color: var(--cor4);
+  cursor: pointer;
+}
+
+.fi-rs-search {
+  padding: auto;
+  color: var(--cor3);
+}
+
+#menu {
+  padding: 10px;
+  align-self: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
+}
+
+.fi-rr-menu-burger {
+  color: var(--cor3);
+  padding: 5px;
+  height: 100%;
+}
+
+#mais::after {
+  content: url("imgs/triangulo-w.svg");
+}
+
+#mais:hover::after {
+  content: url("imgs/triangulo-b.svg");
+}
+
+/* Navegação > DropDown */
+
+#dropdown {
+  position: relative;
+  bottom: -15px;
+}
+
+#dropdown:hover #dropdown2 {
+  display: block;
+}
+
+#dropdown2 {
+  display: none;
+  top: 70%;
+  position: absolute;
+  width: auto;
+  left: 0px;
+}
+
+#dropdown2 > a {
+  background-color: var(--cor3);
+  font: normal 1em var(--font1);
+  font-variant: normal;
+  width: 150px;
+  display: block;
+  color: var(--cor1);
+  padding: 13px;
+  box-shadow: 1px 1px 1px var(--cor1);
+}
+
+#dropdown2 a:hover {
+  background-color: var(--cor2);
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--cor1) url(imgs/banda.jpg) no-repeat;
+  background-size: contain;
+  height: 51%;
+}
+
+header h1 {
+  justify-items: end;
+  color: var(--cor3);
+  padding: 10px;
+  margin: 330px auto 0px auto;
+  font: normal 1.5em var(--font2);
+}
+
+header p {
+  margin: 0px auto 0px auto;
+  color: var(--cor3);
+  padding: 10px;
+  font: normal 1em var(--font1);
+}
+
+/* Principal */
+
+main {
+  height: 100%;
+}
+
+main h1 {
+  color: var(--cor1);
+  text-align: center;
+  margin: 65px auto 20px auto;
+  font: normal 2em var(--font2);
+  font-variant: small-caps;
+}
+
+main h2 {
+  color: var(--cor2);
+  text-align: center;
+  font: normal 1em var(--font1);
+}
+
+main p {
+  color: var(--cor1);
+  text-align: justify;
+  max-width: 700px;
+  margin: 30px auto 55px auto;
+  font: normal 1em var(--font1);
+}
+
+#integrantes {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#integrantes img {
+  margin: 20px 30px 50px 30px;
+  height: 150px;
+}
+
+#integrantes h2 {
+  color: var(--cor1);
+  font: normal 1em var(--font1);
+}
+
+/* Outra Parte */
+
+aside {
+  display: flex;
+  background-color: var(--cor1);
+  height: 100%;
+  margin-top: 30px;
+}
+
+/* Outra parte > Conteudo */
+
+#conteudo {
+  margin: 10px auto 0px auto;
+  width: 100%;
+}
+
+#conteudo h1 {
+  color: var(--cor3);
+  margin-top: 100px;
+  font: normal 2em var(--font2);
+}
+
+/* Outra parte > Ingressos */
+
+#ingressos {
+  margin: 50px auto 20px auto;
+  background-color: var(--cor4);
+  max-width: 90%;
+  width: 700px;
+}
+
+#ingressos p {
+  width: 100%;
+  border: 1px solid var(--cor2);
+  color: var(--cor2);
+  padding: 10px;
+  background-color: var(--cor3);
+  margin: 0;
+  font: normal 1em var(--font1);
+}
+
+#ingressos #meio {
+  border-bottom: none;
+  border-top: none;
+}
+
+#ingressos span {
+  color: var(--cor3);
+  background-color: var(--cor4);
+  padding: 3px;
+  margin-left: 20px;
+  font: normal 1em var(--font1);
+}
+
+#ingressos #circle {
+  background-color: var(--cor1);
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50%;
+  float: right;
+}
+
+/* Outra parte > Cartões */
+
+#cartoes {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  background-color: var(--cor1);
+  margin-bottom: 0px;
+}
+
+.cartao {
+  background-color: var(--cor3);
+  margin: 10px 10px 10px 10px !important;
+  width: 250px;
+}
+
+.cartao img {
+  height: 200px;
+  width: 250px;
+}
+
+.cartao img:hover {
+  opacity: 0.5;
+}
+
+.cartao h1 {
+  color: var(--cor1) !important;
+  font: bold 1em var(--font1) !important;
+  margin: 5px auto 0px 15px !important;
+  text-align: left;
+  padding: 5px;
+}
+
+.cartao h2 {
+  text-align: left;
+  margin: 5px auto 0px 15px !important;
+  font: normal 1em var(--font1);
+  padding: 5px;
+}
+
+.cartao p {
+  width: 250px;
+  text-align: left;
+  margin: 5px auto 20px 15px;
+  padding: 5px;
+  font: normal 1em var(--font1);
+}
+
+.cartao a {
+  display: block;
+  margin: 5px auto 50px 15px !important;
+  text-align: center;
+  padding: 10px;
+  color: var(--cor3);
+  background-color: var(--cor1);
+  width: 150px;
+  font: normal 1em var(--font1);
+  text-decoration: none;
+}
+
+.cartao a:hover {
+  color: var(--cor1);
+  background-color: var(--cor2);
+}
+
+/* contato */
+
+#contato {
+  height: 50%;
+  background-color: var(--cor3);
+}
+
+#contato h1 {
+  margin-top: 200px !important;
+  color: var(--cor1);
+}
+
+#contato h2 {
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+/* Contato > Formulario */
+
+#informaçoes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#formulario {
+  margin-right: 30px;
+}
+
+#formulario input {
+  padding: 10px;
+  font: normal 1em var(--font1);
+  border: 1px solid var(--cor2);
+}
+
+#formulario input:focus {
+  outline: 1px solid blue;
+}
+
+#formulario #mensagem {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 360px;
+}
+
+#nome {
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 170px;
+}
+
+#email {
+  margin-left: 5px;
+  width: 175px;
+}
+
+#formulario button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100px;
+  border: none;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  font: normal 1em var(--font1);
+  float: right;
+}
+
+#formulario button:hover{
+  color: var(--cor3);
+  background-color: var(--cor2);
+}
+
+/* contato > Formulario > informações */
+
+.info {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  justify-content: start;
+  width: 200px;
+  display: inline-block;
+}
+
+.info p {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* Contato > Formulario > icones */
+
+.fi-bs-marker {
+  margin-right: 10px;
+  display: inline;
+}
+
+.fi-sr-phone-call {
+  margin-right: 10px;
+}
+
+.fi-ss-envelope {
+  margin-right: 10px;
+}
+
+/* Rodapé */
+
+footer{
+  height: 85%;
+}
+
+footer img{
+  max-width: 100%;
+  height: auto;
+}
+
+#redesociais{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.redesociais{
+  margin: 0px 5px 0px 5px;
+  display: inline-block;
+  width: 23px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.redesociais:hover{
+  opacity: 0.5;
+}
+
+#creditos{
+  display: block;
+}
+
+#creditos p{
+  text-align: center;
+  margin-bottom: 10px;
+  font: normal 1em "segoe ui" Sans-serif;
+}
+
+#creditos a{
+  text-decoration: underline;
+  color: var(--cor1);
+  font: normal 1em "segoe ui" Sans-serif;
+}
+
+#creditos a:hover{
+  color: var(--cor2);
+  cursor: pointer;
+}
+
+
+/*Media Query*/
+
+@media only screen and (max-width: 720px) {
+  /* Body */
+
+  body {
+    font-size: 13px;
+  }
+
+  /*navegação*/
+
+  nav a {
+    display: none;
+  }
+
+  #inicio {
+    display: inline;
+  }
+
+  /* icones */
+
+  #lupa {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu:hover {
+    background-color: var(--cor2);
+  }
+
+  #menu:hover .fi-rr-menu-burger {
+    color: var(--cor1);
+  }
+
+  /* Cabeçalho */
+
+  header {
+    height: 40%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header p {
+    display: none;
+  }
+
+  /* Principal */
+
+  main p {
+    font-size: 1.2em;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #integrantes {
+    flex-direction: column;
+  }
+
+  .integrantes-img {
+    margin: auto;
+  }
+
+  #integrantes img {
+    height: auto;
+    max-width: 300px;
+  }
+
+  /* Outra parte > Ingressos */
+
+  #ingressos #circle {
+    margin-left: 70%;
+  }
+
+  /* Contato */
+
+  #contato h1 {
+    margin-top: 70px !important;
+  }
+
+  /* Contato > Formulario */
+
+  #informaçoes {
+    flex-direction: column;
+  }
+
+  .info {
+    margin-left: 10px;
+  }
+
+  #nome {
+    display: block;
+    margin-left: 10px;
+    width: 100%;
+    border-bottom: none !important;
+  }
+
+  #email {
+    display: block;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  #mensagem {
+    margin: 10px 0 0 10px !important;
+    width: 100% !important;
+  }
+
+  /* Rodapé */
+
+  footer{
+    height: 40%;
+  }
+}
